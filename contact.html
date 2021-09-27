@@ -5,12 +5,12 @@
     <title>Contato - Reef Journey</title>
 </head>
 <body>
-    <h1>
+    <h1><!--Cabeçado que mostra a logoe em caso de erro mostra o "alt" como h1-->
         <a href="index.html">
             <img src="logo/RJ.png" alt="Reef Journey" width="250" id="logo">
         </a>
     </h1>
-    <fieldset>
+    <fieldset><!--Menu de navegação entre as páginas-->
         <a href="index.html">Home</a> &emsp;|&emsp;
         <a href="info.html">Sobre Nós</a>&emsp;|&emsp;
         <a href="contact.html">Contato</a>
@@ -24,26 +24,25 @@
                 <label for="nome"><!-- o for referencia a id do input-->
                 Nome:
                 </label>
-                <input type="text" id="nome" name="nome" placeholder="Digite aqui o seu nome">
+                <input type="text" id="nome" name="nome" placeholder="Digite aqui o seu nome"><!-- Campo para inserção do nome-->
             </p>
             <p>
                 <label for="cpf"><!-- o for referencia a id do input-->
                     CPF:
                     </label>
-                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" title=XXX.XXX.XXX-XX>
+                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" title=XXX.XXX.XXX-XX><!-- Campo para inserção do CPF-->
 		    </p>
             <p>
-                <!-- Caixa para selecionar data de nascimento com calendário-->
                 <label for="dataNascimento" >
                     Data de Nascimento:
                 </label>
-                <input type="date" id="dataNascimento" name="dataNascimento">
+                <input type="date" id="dataNascimento" name="dataNascimento"><!-- Caixa para selecionar data de nascimento com calendário-->
             </p>
             <p>
                 <label for="telefone"><!-- o for referencia a id do input-->
                     Telefone:
                     </label>
-                <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" title="(XX) XXXXX-XXXX">
+                <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" title="(XX) XXXXX-XXXX"><!-- Campo para inserção do telefone-->
 		    </p>
             <p>
                 <!--Seletor de estados com select para caixa-->
@@ -84,20 +83,20 @@
                 <label for="email">
                     Email:
                 </label>
-                <input type="email" id="email" placeholder="Digite aqui o seu email">
+                <input type="email" id="email" placeholder="Digite aqui o seu email"><!-- Campo para inserção do Email-->
             </p>
 
             <p>
                 <label for="mensagem">
                     Mensagem:
                 </label>
-                <textarea id="mensagem" placeholder="Digite o motivo da sua inscrição"></textarea>
+                <textarea id="mensagem" placeholder="Digite o motivo da sua inscrição"></textarea><!-- Campo para inserção da mensagem com o motivo da inscrição-->
             </p>
         
-            <fieldset>
-                <legend>Pretende ter no seu aquário:</legend>
-                <input type="checkbox" name="reef">Corais
-                <input type="checkbox" name="reef">Peixes
+            <fieldset><!--fieldset dentro do fieldset principal para isolar o checkbox-->
+                <legend>Pretende ter no seu aquário:</legend><!--Checkbox com informações sobre pretensões-->
+                <input type="checkbox" id="reef1" name="reef">Corais
+                <input type="checkbox" id="reef2" name="reef">Peixes
                     
             </fieldset>
             <p>
@@ -105,26 +104,26 @@
                     Possui experiência prévia com aquarismo?
                 </label>
                 <br>
-                <input type="radio" name="experiencia" value="S">Sim
+                <input type="radio" id="S0" name="experiencia" value="S">Sim<!--opções de um primeiro radio-->
                 <br>
-                <input type="radio" name="experiencia" value="N">Não
+                <input type="radio" id="N0" name="experiencia" value="N">Não
             </p>
             <p>
                 <label>
                     Tem interesse em adquirir produtos da ReefShop?
                 </label>
                 <br>
-                <input type="radio" name="buyer" value="S">Sim
+                <input type="radio" id="S1" name="buyer" value="S">Sim<!--opções de um segundo radio-->
                 <br>
-                <input type="radio" name="buyer" value="N">Não
+                <input type="radio" id="N0" name="buyer" value="N">Não
             </p>
             <p>
-                <button type="reset">Limpa</button>
-                <button type="submit">Enviar</button> 
+                <button type="reset">Limpa</button><!--Botão que limpa o formulário-->
+                <button type="submit">Enviar</button> <!--Botão que faz os submit do formulário-->
             </p>
         </fieldset>
     </form>
-    <br>
+    <br><!--Início do rodapé presente em todas as páginas. -->
     <a href="#logo"><img width="20" src="logo/suba.png">Subir ao topo<img width="20" src="logo/suba.png"></a>
     <br>
     <br>
