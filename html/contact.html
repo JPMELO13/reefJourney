@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Reef Journey</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+    <main class="containerPai">
+        <header>
+            <!-- outra navbar para navegação entre login e cadastre-se. Após logado mostrar carrinho -->
+            <nav class="bSup">
+                <a id="login" href=#>Login</a>
+            </nav>
+            <h1><!--Cabeçalho que mostra a logoe em caso de erro mostra o "alt" como h1-->
+                <a href="../index.html">
+                    <img class="logo" src="../images/logo/RJ1.png" alt="Reef Journey" id="logo">
+                </a>
+            </h1>
+        </header>
+        <nav class="nav">
+            <ul class="menu">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../html/info.html">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="../html/contact.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <form action="" method=""><!--Form com action para chamar um arquivo e method para selecionar o método de envio desses dados-->
+                <fieldset>
+                    <legend title= "Utilizando as informações e dados preenchidos e enviados através deste formulário, a Reef Journey contatará os candidatos para inscrição em novas turmas. Solicitamos, portanto, que desde já o aluno se comprometa e informe dados próprios e verdadeiros."><h2>Informações de Contato</h2></legend>
+                    <p>
+                        <label for="nome"><!-- o for referencia a id do input-->
+                        Nome:
+                        </label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite aqui o seu nome"><!-- Campo para inserção do nome-->
+                    </p>
+                    <p>
+                        <label for="cpf"><!-- o for referencia a id do input-->
+                            CPF:
+                            </label>
+                        <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" title=XXX.XXX.XXX-XX><!-- Campo para inserção do CPF-->
+                    </p>
+                    <p>
+                        <label for="dataNascimento" >
+                            Data de Nascimento:
+                        </label>
+                        <input type="date" id="dataNascimento" name="dataNascimento"><!-- Caixa para selecionar data de nascimento com calendário-->
+                    </p>
+                    <p>
+                        <label for="telefone"><!-- o for referencia a id do input-->
+                            Telefone:
+                            </label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" title="(XX) XXXXX-XXXX"><!-- Campo para inserção do telefone-->
+                    </p>
+                    <p>
+                        <!--Seletor de estados com select para caixa-->
+                        <label for="estado">Estado:</label>
+                        <select id="estado" name="estados-brasil">
+                            <option>Selecione o Estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="email">
+                            Email:
+                        </label>
+                        <input type="email" id="email" placeholder="Digite aqui o seu email"><!-- Campo para inserção do Email-->
+                    </p>
+
+                    <p>
+                        <label for="mensagem">
+                            Mensagem:
+                        </label>
+                        <textarea id="mensagem" placeholder="Digite o motivo da sua inscrição"></textarea><!-- Campo para inserção da mensagem com o motivo da inscrição-->
+                    </p>
+                
+                    <fieldset><!--fieldset dentro do fieldset principal para isolar o checkbox-->
+                        <legend>Pretende ter no seu aquário:</legend><!--Checkbox com informações sobre pretensões-->
+                        <input type="checkbox" id="reef1" name="reef">Corais
+                        <input type="checkbox" id="reef2" name="reef">Peixes
+                            
+                    </fieldset>
+                    <p>
+                        <label>
+                            Possui experiência prévia com aquarismo?
+                        </label>
+                        <br>
+                        <input type="radio" id="S0" name="experiencia" value="S">Sim<!--opções de um primeiro radio-->
+                        <br>
+                        <input type="radio" id="N0" name="experiencia" value="N">Não
+                    </p>
+                    <p>
+                        <label>
+                            Tem interesse em adquirir produtos da ReefShop?
+                        </label>
+                        <br>
+                        <input type="radio" id="S1" name="buyer" value="S">Sim<!--opções de um segundo radio-->
+                        <br>
+                        <input type="radio" id="N0" name="buyer" value="N">Não
+                    </p>
+                    <p>
+                        <button type="reset">Limpa</button><!--Botão que limpa o formulário-->
+                        <button type="submit">Enviar</button> <!--Botão que faz os submit do formulário-->
+                    </p>
+                </fieldset>
+            </form>
+            <br>
+            <div id="topo">
+                <a href="#login"><img src="../images/logo/seta.png">Topo</a>
+            </div>
+        </section>
+        <aside>
+            <p>
+                Acesse agora mesmo nosso <br>e-commerce
+            </p>
+            <h2><!-- Cabeçalho que mostra a logo e em caso de erro mostra o "alt" como h1 -->
+                <a href=#>
+                    <img src="../images/logo/RSbanner.png" alt="Reef Shop"  id="RS">
+                </a>
+            </h2>
+            <p>
+                A loja virtual onde você encontra todos os artigos de aquarismo para adentrar na Reef Journey.
+            </p>
+
+        </aside>
+        <footer><!--Início do rodapé presente em todas as páginas. -->
+            <div>
+                <h6>
+                    &copy; 2021<a href='https://github.com/JPMELO13'> JPMELO13</a>.All rights reserved.
+                </h6>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

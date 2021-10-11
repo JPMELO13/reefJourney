@@ -1,0 +1,153 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background:black;
+}
+
+.containerPai{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: max-content 50px max-content 40px;
+    grid-template-areas: "header header"
+                         "aside nav"
+                         "aside section"
+                         "footer footer"
+}
+
+header{
+    display: grid;
+    background-image:url(../images/logo/waterTexture.jpg);
+    width: 100%;
+    grid-area: header;
+
+
+
+}
+header h1{
+    text-align: center;
+}
+.logo{
+    width: 400px;
+}
+.nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-area: nav;
+    background: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6baba3;
+    align-items: center;
+
+}
+.bSup{
+    display:flex;
+    justify-content: right;
+    
+}
+#login{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 40px;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 30px;
+    border-color: #6baba3;
+    cursor: pointer;
+    padding: 3px 10px;
+    color:black;
+    background-color:#6baba3;
+}
+
+.menu{
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.menu a{
+    text-decoration: none;
+    border:2px;
+    background-color:#6baba3;
+    padding: 3px 10px;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 30px;
+    border-color: #6baba3;
+    cursor: pointer;
+    color:black;
+}
+section{
+    display: grid;
+    background: #0c1d31;
+    grid-area: section;
+    color:ivory;
+    padding-left:20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+
+aside{
+
+    display:grid;
+    align-content: space-around;
+    grid-area:aside;
+    color:ivory;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6baba3;
+
+}
+aside p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+}
+#RS{
+    background: #6baba3;
+    width: 50%;
+    padding:40px;
+    border-color: #6baba3;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 30px;
+}
+
+#topo a{
+
+    text-decoration: none;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 30px;
+    border-color: #6baba3;
+    cursor: pointer;
+    padding: 3px 10px;
+    color:black;
+    background-color:#6baba3;
+    align-items: center;
+    justify-items: center;
+}
+#topo img{
+    width: 16px;
+    align-self: center;
+}
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    color:ivory;
+    grid-area: footer;
+    display: grid;
+    background: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #6baba3;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}

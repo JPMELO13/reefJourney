@@ -3,44 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Home - Reef Journey</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-    <h1><!--Cabeçado que mostra a logoe em caso de erro mostra o "alt" como h1-->
-        <a href="index.html">
-            <img src="logo/RJ.png" alt="Reef Journey" width="250" id="logo">
-        </a>
-    </h1>
-    <fieldset><!--Menu de navegação entre as páginas-->
-        <a href="index.html">Home</a> &emsp;|&emsp;
-        <a href="info.html">Sobre Nós</a>&emsp;|&emsp;
-        <a href="contact.html">Contato</a>
-    </fieldset>
-    <br>
+    <main class="containerPai">
+        <header>
+            <!-- outra navbar para navegação entre login e cadastre-se. Após logado mostrar carrinho -->
+            <nav class="bSup">
+                <a id="login" href=#>Login</a>
+            </nav>
+            <h1><!-- Cabeçalho que mostra a logo e em caso de erro mostra o "alt" como h1 -->
+                <a href="index.html">
+                    <img class="logo" src="images/logo/RJ1.png" alt="Reef Journey" id="logo">
+                </a>
+            </h1>
+        </header>
+        <nav class="nav">
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="html/info.html">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="html/contact.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <figure><!--Imagem exemplificativa de um sistema marinho complexo-->
+                <img height="400" src="images\faunaMarin3.png" alt ="Foto retirada do instagram de Damien Schmitt de seu sistema marinho">
+                <figcaption >Sistema de <cite>Damien Schmitt</cite> - <a href="https://www.instagram.com/schmitt_reef/"> @schmitt_reef</a></figcaption>
+            </figure>
+            <article>
+                <h3><!--título H3 para introduzir o texto-->
+                    Quem não gostaria de ter um pedacinho do oceano na própria casa?
+                </h3>
+                <p>
+                    A Reef Journey nasceu em 2021 com o intuito de fornecer o suporte necessário para que pessoas apaixonadas pelo hobby do aquarismo marinho, desde amadores a entusiastas, tenham a oportunidade de realizar o sonho de possuir um sistema completo. Juntamente aos produtos disponibilizados em nossa ReefShop, a Reef Journey está empenhada na difusão do conhecimento necessário para que qualquer um, sem conhecimento prévio, tenha a capacidade de entendimento e manutenção do seu próprio sistema marinho, acompanhando com os conteúdos teóricos a evolução na prática. Acreditamos numa metodologia de ensino interativa que funciona como uma jornada, onde há objetivos a serem atingidos e constatados no seu próprio aquário. É possível encontrar todos os equipamentos, produtos e kits citados em nossos módulos teóricos em nossa loja virtual ReefShop.
+                </p>
+                <p>
+                    Se você montou seu aquário marinho e não obteve sucesso, essa pode ser a chance de você recomeçar com o pé direito. Por decorrência de más práticas iniciais, pode-se tornar quase impossível manter um aquário a longo prazo.
+                </p>
+                <p>
+                    Agora, caso você nunca tenha montado um <em>reef</em>, utilizando nossa plataforma e conteúdos disponíveis você terá a certeza de que utilizará os conhecimentos comprovados mais atualizados sobre todos os tópicos aquarísticos. Dessa forma, você prevenirá futuras adversidades em seu sistema.
+                </p>
+            </article>
+            <div id="topo">
+                <a href="#login"><img src="images/logo/seta.png">Topo</a>
+            </div>
+        </section>
+        <aside>
+            <p>
+                Acesse agora mesmo nosso <br>e-commerce
+            </p>
+            <h2><!-- Cabeçalho que mostra a logo e em caso de erro mostra o "alt" como h1 -->
+                <a href=#>
+                    <img src="images/logo/RSbanner.png" alt="Reef Shop"  id="RS">
+                </a>
+            </h2>
+            <p>
+                A loja virtual onde você encontra todos os artigos de aquarismo para adentrar na Reef Journey.
+            </p>
 
-    <figure><!--Imagem exemplificativa de um sistema marinho complexo-->
-        <img height="400" src="aquariums\faunaMarin3.png" alt ="Foto retirada do instagram de Damien Schmitt de seu sistema marinho">
-        <figcaption >Sistema de <cite>Damien Schmitt</cite> - <a href="https://www.instagram.com/schmitt_reef/"> @schmitt_reef</a></figcaption>
-    </figure>
-    <h3><!--título H3 para introduzir o texto-->
-        Quem não gostaria de ter um pedacinho do oceano na própria casa?
-    </h3>
-    <p>
-        A <strong>Reef Journey</strong> nasceu em 2021 com o intuito de fornecer o suporte necessário para que pessoas apaixonadas pelo hobby do aquarismo marinho, desde amadores a entusiastas, tenham a oportunidade de realizar o sonho de possuir um sistema completo. Juntamente aos produtos disponibilizados em nossa <strong>ReefShop</strong>, a <strong>Reef Journey</strong> está empenhada na difusão do conhecimento necessário para que qualquer um, sem conhecimento prévio, tenha a capacidade de entendimento e manutenção do seu próprio sistema marinho, acompanhando com os conteúdos teóricos a evolução na prática. Acreditamos numa metodologia de ensino interativa que funciona como uma jornada, onde há objetivos a serem atingidos e constatados no seu próprio aquário. É possível encontrar todos os equipamentos, produtos e kits citados em nossos módulos teóricos em nossa loja virtual <strong>ReefShop</strong>.
-    </p>
-
-
-    <p>
-        Se você montou seu aquário marinho e não obteve sucesso, essa pode ser a chance de você recomeçar com o pé direito. Por decorrência de más práticas iniciais, pode-se tornar quase impossível manter um aquário a longo prazo.
-    </p>
-    <p>
-        Agora, caso você nunca tenha montado um <em>reef</em>, utilizando nossa plataforma e conteúdos disponíveis você terá a certeza de que utilizará os conhecimentos comprovados mais atualizados sobre todos os tópicos aquarísticos. Dessa forma, você prevenirá futuras adversidades em seu sistema.
-    </p>
-    <br><!--Início do rodapé presente em todas as páginas. -->
-    <a href="#logo"><img width="20" src="logo/suba.png">Voltar ao topo<img width="20" src="logo/suba.png"></a>
-    <br>
-    <br>
-    <h6>
-        &copy; 2021<a href='https://github.com/JPMELO13'> JPMELO13</a><br>
-    </h6>
-    </body>
+        </aside>
+        <footer><!--Início do rodapé presente em todas as páginas. -->
+            <h6 >
+                &copy; 2021<a href='https://github.com/JPMELO13'> JPMELO13</a>. All rights reserved.
+            </h6>
+        
+        </footer>
+    </main>
+</body>
 </html>
